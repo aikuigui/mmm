@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet/less" href="./css/base.less"/>
+    <link rel="stylesheet/less" href="./css/commodity-details.less"/>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css"/>
+    <script src="./lib/less/less.js"></script>
+</head>
+<body>
+<!--头部  header-->
+<div class="header">
+    <div class="logo">
+        <a href="#"><img src="./images/header_logo.png" alt=""></a>
+    </div>
+    <div class="download">
+        <a href="#"><img src="./images/header_app.png" alt=""></a>
+    </div>
+</div>
+<!--搜索  search-->
+<div class="search">
+    <form action="#" method="get" name="frm">
+        <input type="search" placeholder="请输入你想比价的商品">
+        <input type="button" value="搜索">
+    </form>
+</div>
+<!--商品详情  commodity-details-->
+<div class="commodity-details">
+    <div class="nav">
+        <span>首页</span>
+        <span>全部分类</span>
+        <span class="commodity-name"></span>
+        <a href="#">筛选</a>
+    </div>
+    <div class="commodity-content">
+        <div class="pic-c">
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/sc.jpg" alt="收藏" width="39" height="39"></a>
+        </div>
+        <div class="pic">
+            <!--<img src="http://www.zuyushop.com:8013/ProPic/201612/Thumb/Thumb_2016120016545049735.jpg" alt="">-->
+        </div>
+        <div class="pic-text"></div>
+    </div>
+    <div class="exchange">
+        <ul>
+            <li><a href="#">比价购买</a></li>
+            <li><a href="#">产品参数</a></li>
+            <li><a href="#">优选评价</a></li>
+        </ul>
+        <div class="mall">
+            <span class="jd-tp"><img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt=""></span>
+            <span class="jd-sc">京东商城</span>
+            <span class="jd-jg">￥9999</span>
+            <span class="jd-gw"><a href="#">去购买</a></span>
+        </div>
+        <div class="text-s">* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</div>
+    </div>
+    <div class="discuss">
+        <div class="discuss-title">
+            <div>网友评论</div>
+        </div>
+        <ul class="discuss-content">
+            <!--<li>-->
+                <!--<div class="wen-m clearfix">-->
+                    <!--<div class="pull-left">b***r</div>-->
+                    <!--<div class="pull-right">2016/10/1</div>-->
+                <!--</div>-->
+                <!--<div class="wen-l text-right">购买自：京东商城</div>-->
+                <!--<div class="wen-s">边框蛮好看的；清晰度较高，色彩不错；播放声音音质也不错；没有屏幕亮点也没有边角漏光现象；没买盒子装了个电视家看直播也不错；总的来说电视性价比还可以。</div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+</div>
+<!--尾部  footer-->
+<div class="footer">
+    <div class="nav">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+    </div>
+    <div class="bottom">
+        <p>
+            <a href="#">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            <span> -- 掌上比价平台</span>
+        </p>
+        <p>m.manmanbuy.com </p>
+    </div>
+</div>
+
+<!--模板渲染-->
+<script type="text/html" id="discuss-s">
+    {{each result as value index}}
+    <li>
+        <div class="wen-m clearfix">
+            <div class="pull-left">{{value.comName}}</div>
+            <div class="pull-right">{{value.comTime}}</div>
+        </div>
+        <div class="wen-l text-right">{{value.comFrom}}</div>
+        <div class="wen-s">{{value.comContent}}</div>
+    </li>
+    {{/each}}
+</script>
+</body>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/template.js"></script>
+<script src="js/commodity-details.js"></script>
+</html>

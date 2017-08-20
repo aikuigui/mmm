@@ -1,0 +1,244 @@
+//header css 头部
+.header {
+  height: 50px;
+  background-color: #ff841d;
+  .logo {
+    float: left;
+    width: 75%;
+    padding: 12px;
+    margin-left: 5px;
+    a {
+      height: 100%;
+      img {
+        max-height: 25px;
+        overflow: hidden;
+      }
+    }
+  }
+  .download {
+    float: right;
+    padding: 8px;
+    a {
+      height: 100%;
+      img {
+        max-height: 34px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+//header css
+
+//search css 搜索
+.search {
+  height: 100%;
+  form {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px;
+    position: relative;
+    input[type="search"] {
+      border: none;
+      border-radius: 15px;
+      height: 30px;
+      line-height: 3px;
+      background-color: #f1f1f1;
+      padding-left: 5%;
+      width: 90%;
+    }
+    input[type="button"] {
+      width: 63px;
+      height: 30px;
+      background-color: #ff841d;
+      border: none;
+      border-radius: 15px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #fff;
+    }
+  }
+}
+
+//search css
+
+//commodity-details css 商品详情
+.commodity-details {
+  .nav {
+    height: 35px;
+    line-height: 35px;
+    background-color: #F6F6F6;
+    padding: 0 10px;
+    span {
+      font-size: 14px;
+      color: #5a5a5a;
+    }
+    span:after {
+      content: ' >';
+    }
+    a {
+      width: 45px;
+      float: right;
+      background-color: #FF841D;
+      line-height: 27px;
+      margin-top: 4px;
+      text-align: center;
+      border-radius: 5px;
+      color: #5a5a5a;
+    }
+  }
+  .commodity-content {
+    position: relative;
+    padding: 10px;
+    .pic-c {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+    }
+    .pic {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto;
+      img {
+        max-width: 160px;
+        max-height: 160px;
+      }
+    }
+    .pic-text {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+  .exchange {
+    ul {
+      height: 34px;
+      line-height: 34px;
+      display: flex;
+      margin-bottom: 0;
+      li {
+        float: left;
+        width: 33.33%;
+        background-color: #FFC72E;
+        text-align: center;
+        border-top: 1px solid #c14d00;
+        border-bottom: 1px solid #c14d00;
+        border-left: 1px solid #c14d00;
+        a {
+
+        }
+      }
+      li:first-child {
+        border-bottom: none;
+        border-left: none;
+        background-color: #FF9812;
+      }
+    }
+    .mall {
+      padding: 10px;
+      border-bottom: 1px solid #c14d00;
+      .jd-tp {
+        display: inline-block;
+        width: 25%;
+        text-align: center;
+      }
+      .jd-sc {
+        width: 25%;
+        display: inline-block;
+        font-size: 18px;
+        line-height: 20px;
+      }
+      .jd-jg {
+        width: 25%;
+        display: inline-block;
+        font-size: 18px;
+        color: red;
+      }
+      .jd-gw {
+        display: inline-block;
+        width: 20%;
+        padding-left: 10px;
+        a {
+          width: 45px;
+          display: inline-block;
+          line-height: 24px;
+          text-align: center;
+          background-color: red;
+          border: 1px solid red;
+          border-radius: 6px;
+        }
+      }
+    }
+    .text-s{
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  .discuss{
+    .discuss-title{
+      border-top: 4px solid #7a7a7a;
+      div{
+        text-align: center;
+        font-size: 16px;
+        height: 34px;
+        line-height: 34px;
+        background-color: #dbdbdb;
+      }
+    }
+    .discuss-content{
+      li{
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        .wen-m{}
+        .wen-l{
+          margin: 5px 0;
+        }
+        .wen-s{}
+      }
+    }
+  }
+}
+
+//commodity-details css
+
+//footer css 尾部
+.footer {
+  width: 100%;
+  padding-top: 20px;
+  background-color: #EEEEEE;
+  .nav {
+    height: 34px;
+    line-height: 34px;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    a {
+      float: left;
+      width: 30%;
+      text-align: center;
+      color: #c4c4c4;
+      border-right: 1px solid #c4c4c4;
+    }
+    a:last-child {
+      border-right: none;
+      width: 40%;
+    }
+    img {
+      max-height: 15px;
+    }
+  }
+  .bottom {
+    text-align: center;
+    p {
+      a {
+        color: #5a5a5a;
+      }
+      a:first-child {
+        color: red;
+      }
+    }
+    p:first-child {
+      margin-top: 10px;
+    }
+  }
+}
+
+//footer css

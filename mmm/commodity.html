@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <link rel="stylesheet/less" href="./css/base.less"/>
+    <link rel="stylesheet/less" href="./css/commodity.less"/>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css"/>
+    <script src="./lib/less/less.js"></script>
+</head>
+<body>
+<!--头部  header-->
+<div class="header">
+    <div class="logo">
+        <a href="#"><img src="./images/header_logo.png" alt=""></a>
+    </div>
+    <div class="download">
+        <a href="#"><img src="./images/header_app.png" alt=""></a>
+    </div>
+</div>
+<!--搜索  search-->
+<div class="search">
+    <form action="#" method="get" name="frm">
+        <input type="search" placeholder="请输入你想比价的商品">
+        <input type="button" value="搜索">
+    </form>
+</div>
+<!--商品  commodity-->
+<div class="commodity">
+    <div class="nav">
+        <span>首页</span>
+        <span>全部分类</span>
+        <span class="commodity-name">电视</span>
+        <a href="#">筛选</a>
+    </div>
+    <div class="commodity-s">
+        <ul>
+            <!--<li>-->
+                <!--<a href="#" class="clearfix">-->
+                    <!--<div class="pic">-->
+                        <!--<img src="http://www.zuyushop.com:8013/ProPic/201612/small80/Thumb_2016120016544872739.jpg" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="inf">-->
+                        <!--<div class="tit">夏普(SHARP) LCD-70SU665A 70英寸 4K超高清智能液晶电视</div>-->
+                        <!--<div class="price">￥1999.00</div>-->
+                        <!--<div class="other">-->
+                            <!--<span>报价(6)</span>-->
+                            <!--<span>评论(2286)</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</a>-->
+            <!--</li>-->
+        </ul>
+    </div>
+    <div class="page">
+        <span class="page-s"><a href="#">上一页</a></span>
+        <span class="page-f">
+            <select name="" id="selectPage">
+                <!--<option value="1">1</option>-->
+                <!--<option value="2">2</option>-->
+                <!--<option value="3">3</option>-->
+            </select>
+        </span>
+        <span class="page-x"><a href="#">下一页</a></span>
+    </div>
+</div>
+<!--尾部  footer-->
+<div class="footer">
+    <div class="nav">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+    </div>
+    <div class="bottom">
+        <p>
+            <a href="#">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            <span> -- 掌上比价平台</span>
+        </p>
+        <p>m.manmanbuy.com </p>
+    </div>
+</div>
+
+<!--模板渲染-->
+<script type="text/html" id="commodity-s">
+    {{each result as value index}}
+    <li>
+        <a href="./commodity-details.html?productid={{value.productId}}" class="clearfix">
+            <div class="pic">
+                {{#value.productImg}}
+            </div>
+            <div class="inf">
+                <div class="tit">{{value.productName}}</div>
+                <div class="price">{{value.productPrice}}</div>
+                <div class="other">
+                    <span>{{value.productQuote}}</span>
+                    <span>{{value.productCom}}</span>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+</body>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/template.js"></script>
+<script src="js/commodity.js"></script>
+</html>

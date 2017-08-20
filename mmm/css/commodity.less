@@ -1,0 +1,218 @@
+//header css 头部
+.header{
+  height: 50px;
+  background-color: #ff841d;
+  .logo{
+    float: left;
+    width: 75%;
+    padding: 12px;
+    margin-left: 5px;
+    a{
+      height: 100%;
+      img{
+        max-height: 25px;
+        overflow: hidden;
+      }
+    }
+  }
+  .download{
+    float: right;
+    padding: 8px;
+    a{
+      height: 100%;
+      img{
+        max-height: 34px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+//header css
+
+//search css 搜索
+.search{
+  height: 100%;
+  form{
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px;
+    position: relative;
+    input[type="search"]{
+      border: none;
+      border-radius: 15px;
+      height: 30px;
+      line-height: 3px;
+      background-color: #f1f1f1;
+      padding-left: 5%;
+      width: 90%;
+    }
+    input[type="button"]{
+      width: 63px;
+      height: 30px;
+      background-color: #ff841d;
+      border: none;
+      border-radius: 15px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #fff;
+    }
+  }
+}
+//search css
+
+//commodity css 商品
+.commodity{
+  .nav{
+    height: 35px;
+    line-height: 35px;
+    background-color: #FF841D;
+    padding: 0 10px;
+    span{
+      font-size: 14px;
+      color: #5a5a5a;
+    }
+    span:after{
+      content:' >';
+    }
+    a{
+      width: 45px;
+      float: right;
+      background-color: pink;
+      line-height: 27px;
+      margin-top: 4px;
+      text-align: center;
+      border-radius: 5px;
+      color: #5a5a5a;
+    }
+  }
+  .commodity-s{
+    padding: 10px;
+    ul{
+      margin-bottom: 0px;
+      li{
+        border-bottom: 1px solid #e0e0e0;
+        margin: 10px 0;
+        a{
+          display: block;
+          .pic{
+            float: left;
+            width: 120px;
+            height: 120px;
+            text-align: center;
+            margin-right: 10px;
+            overflow: hidden;
+            img{
+              width: 120px;
+              height: 120px;
+            }
+          }
+          .inf{
+            overflow: hidden;
+            .tit{
+              font-size: 16px;
+              color: #333333;
+            }
+            .price{
+              font-size: 20px;
+              color: red;
+              margin-top: 10px;
+            }
+            .other{
+              color: #333333;
+              margin-top: 20px;
+              span:nth-child(2){
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .page{
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #EEEEEE;
+    .page-s{
+      flex: 1;
+      a{
+        display: inline-block;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 32px;
+        overflow: hidden;
+        padding: 2px 20px;
+        color: #333333;
+        background-color: #D4CFCF;
+      }
+    }
+    .page-f{
+      flex: 1;
+      select{
+        border: 1px solid #bababa;
+        font-size: 16px;
+        height: 32px;
+        margin-top: 1px;
+      }
+    }
+    .page-x{
+      flex: 1;
+      a{
+        display: inline-block;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 32px;
+        overflow: hidden;
+        padding: 2px 20px;
+        color: #333333;
+        background-color: #D4CFCF;
+      }
+    }
+  }
+}
+//commodity css
+
+//footer css 尾部
+.footer{
+  width: 100%;
+  padding-top: 20px;
+  background-color: #EEEEEE;
+  .nav{
+    height: 34px;
+    line-height: 34px;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    a{
+      float: left;
+      width:30%;
+      text-align: center;
+      color: #c4c4c4;
+      border-right: 1px solid #c4c4c4;
+    }
+    a:last-child{
+      border-right: none;
+      width: 40%;
+    }
+    img{
+      max-height: 15px;
+    }
+  }
+  .bottom{
+    text-align: center;
+    p{
+      a{
+        color: #5a5a5a;
+      }
+      a:first-child{
+        color: red;
+      }
+    }
+    p:first-child{
+      margin-top: 10px;
+    }
+  }
+}
+//footer css
